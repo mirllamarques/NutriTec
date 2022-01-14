@@ -1,0 +1,44 @@
+.example-spacer {
+  flex: 1 1 auto;
+
+}
+.menu{
+  border: none;
+  color: #0ead69;
+}
+
+#logo{
+  height: 53px;
+  width: 180px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.consulta{
+  background-color: #0ead69;
+  border-color: #3bceac;
+  border-radius: 8px;
+  border-width: 3px;
+  box-shadow: 2px 2px 2px gray;
+
+}
+
+a{
+  color: white;
+  font-size: 20px;
+  font-family: philosopher, sans-serif;
+  text-decoration: none;
+}
+
+.consulta:hover{
+  background-color: #248b5b;
+  transition: all 0.5s;
+}
+
+span{
+  color: #0ead69;
+}
+
+#icone{
+  color: #0ead69;
+}
