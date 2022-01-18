@@ -11,10 +11,12 @@
       <mat-icon id= "icone">person</mat-icon>
       <span>Paciente</span>
     </button>
+
     <button mat-menu-item>
       <mat-icon id= "icone">local_hospital</mat-icon>
-      <span>Nutricionista</span>
+      <a href="http://localhost:4200/areaNutricionista" class="area-nutri"><span> Nutricionista</span></a>
     </button>
+    
     <button mat-menu-item>
       <mat-icon id="icone">timeline</mat-icon>
       <span> Dashboard</span>
@@ -30,3 +32,5 @@
     </a>
   </button>
 </mat-toolbar>
+
+<router-outlet></router-outlet>

@@ -9,6 +9,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CadastrarNutricionistaComponent } from './cadastrar-nutricionista/cadastrar-nutricionista/cadastrar-nutricionista.component';
 
 @NgModule({
   declarations: [

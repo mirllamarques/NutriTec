@@ -17,10 +17,11 @@
 .consulta{
   background-color: #0ead69;
   border-color: #3bceac;
-  border-radius: 8px;
+  border-radius: 3px;
   border-width: 3px;
   box-shadow: 2px 2px 2px gray;
-
+  width: 110px;
+  height: 37px;
 }
 
 a{
@@ -28,6 +29,7 @@ a{
   font-size: 20px;
   font-family: philosopher, sans-serif;
   text-decoration: none;
+
 }
 
 .consulta:hover{
