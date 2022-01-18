@@ -1,0 +1,64 @@
+<div class="titulo">
+  <h1 class="dados">Dados</h1>
+
+<form action="" method="post">
+
+  <div id="formulario-a">
+
+    <div id="info">
+      <label for="dados">Nome</label>
+      <textarea name="" id="value" cols="40" rows="1" placeholder="Nome Completo" class="name"></textarea>
+    </div>
+
+    <div id="info">
+      <label for="dados">Especialidade</label>
+      <textarea name="" id="spec" cols="30" rows="1" class="especialidade" placeholder="Especialidade"></textarea>
+    </div>
+
+  </div>
+
+  <div id="formulario-b">
+
+    <div id="info">
+      <mat-form-field class= "date">
+        <label for="dados">Data de Nascimento</label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div id="info">
+      <label for="dados">Matrícula</label>
+      <textarea name="" id="mat" cols="30" rows="1" class="matricula" placeholder="Matrícula"></textarea>
+    </div>
+  </div>
+
+  <h1 class= "t2">Planos</h1>
+
+  <div class="planos">
+
+    <div class="pvida">
+      <input type="checkbox" name="" id="plano-vida">
+      <label for="plano-vida" class="nome-plano">Plano Vida</label>
+    </div>
+
+    <div class="hsaude">
+      <input type="checkbox" name="" id="hap-saude">
+      <label for="hap-saude" class="nome-plano">Hap Saúde</label>
+    </div>
+
+    <div class="umais">
+      <input type="checkbox" name="" id="ut-mais">
+      <label for="ut-mais" class="nome-plano">Ut Mais</label>
+    </div>
+
+  </div>
+
+  <div class="cadastrar" >
+    <button id="botao-cadastrar">Cadastrar</button>
+  </div>
+
+</form>
+
+</div>
