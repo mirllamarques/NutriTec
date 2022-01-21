@@ -1,0 +1,40 @@
+<style>
+  .action{
+display: flex;
+justify-content: center;
+  }
+  #delete{
+    background-color: #ff2e00;
+    color: white;
+    border: #e02900 8px;
+    border-radius: 2px;
+    width: 100px;
+    height: 38px;
+  }
+  #delete:hover{
+    transition: 500ms;
+    transform-origin: center;
+    background-color: #ca2601;
+  }
+  .textarea{
+    border-color: #3bceac;
+  }
+
+  ::-webkit-input-placeholder{
+  color: #ff2e00;
+  font-family: 'ubuntu', serif;
+  font-size: 15px;
+}
+</style>
+
+<h1 mat-dialog-title>Excluir Cadastro</h1>
+<div mat-dialog-content>
+  <h3>Deseja realmente excluir seu cadastro na NutriTec?</h3>
+</div>
+<div mat-dialog-actions class="action">
+  <form action="delete">
+    <div class="input"><textarea name="matricula" placeholder="Matrícula" cols="50" rows="1" id="1" class="textarea"></textarea></div>
+    <div class="action"><button mat-button id="delete">Deletar</button></div>
+
+</form>
+</div>
