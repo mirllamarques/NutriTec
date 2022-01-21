@@ -1,0 +1,49 @@
+<div class="titulo"><h1 class="dados">Dados</h1></div>
+
+<form action="post">
+  <div id="form-a">
+    <div id="info">
+      <label for="dados">Nome</label>
+      <textarea name="" id="value" cols="40" rows="1" placeholder="Nome Completo" class="name"></textarea>
+    </div>
+
+    <div id="info">
+      <mat-form-field class= "date">
+        <label for="dados">Data de Nascimento</label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+  <div id="form-b">
+
+    <div id="info">
+      <label for="dados">Peso</label>
+      <textarea name="" id="" cols="30" rows="1" placeholder="Peso" class="peso"></textarea>
+    </div>
+
+    <div id="info">
+      <label for="dados">Altura</label>
+      <textarea name="" id="" cols="30" rows="1" placeholder="Altura" class="altura"></textarea>
+    </div>
+    <div id="info">
+      <label for="dados">CPF</label>
+      <textarea name="" id="" cols="30" rows="1"placeholder = "CPF" class="cpf"></textarea>
+    </div>
+
+    <div id="info">
+      <label for="dados">Plano</label>
+        <select class="plano">
+          <option value="particular">Particular</option>
+          <option value="plano-vida">Plano Vida</option>
+          <option value="hap-saude">Hap Saúde</option>
+          <option value="ut-mais">Ut Mais</option>
+        </select>
+    </div>
+  </div>
+  <div class="atualizar" >
+    <button id="botao-atualizar">Atualizar</button>
+  </div>
+
+</form>

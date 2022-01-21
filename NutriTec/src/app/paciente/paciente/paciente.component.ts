@@ -1,21 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 
+
 @Component({
-  selector: 'app-nutricionista',
-  templateUrl: './nutricionista.component.html',
-  styleUrls: ['./nutricionista.component.scss']
+  selector: 'app-paciente',
+  templateUrl: './paciente.component.html',
+  styleUrls: ['./paciente.component.scss']
 })
-export class NutricionistaComponent{
+export class PacienteComponent{
+
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
     this.dialog.open(DialogElements);
   }
+
 }
 
 @Component({
   selector: 'dialog-element',
-  templateUrl: './dialog-elements.html',
+  templateUrl: './dialog-element.html',
 })
 export class DialogElements {}
