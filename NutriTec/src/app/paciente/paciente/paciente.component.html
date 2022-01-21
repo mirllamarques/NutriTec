@@ -1,0 +1,25 @@
+<img src="../../../assets/pessoa.png" >
+
+<h1>Bem Vindo à área do paciente!</h1>
+
+<h2>O que deseja fazer?</h2>
+
+<div class="buttons">
+
+  <a href="http://localhost:4200/cadastrar-paciente">
+    <button mat-fab id="add">
+      <mat-icon>person_add</mat-icon>
+    </button>
+  </a>
+
+  <a href="http://localhost:4200/editar-paciente">
+    <button mat-fab id="edit">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </a>
+
+    <button mat-fab  mat-button (click)="openDialog()" id="delete" >
+      <mat-icon>delete</mat-icon>
+    </button>
+
+</div>

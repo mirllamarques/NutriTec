@@ -1,0 +1,126 @@
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+h1{
+  font-size: 40px;
+  color: #0ead69;
+  font-family: philosopher, sans-serif;
+
+}
+#form-a{
+  display: flex;
+  margin-top: 3%;
+  margin-left: 13%;
+  margin-right: 20%;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.name{
+  width: 400px;
+}
+
+label{
+  display: flex;
+  color: #ff2e00;
+  font-family: 'philosopher', sans-serif;
+}
+option{
+
+  color: #ff2e00;
+  font-family: 'philosopher', sans-serif;
+}
+
+.plano{
+  width: 120px;
+  color:#ff2e00;
+}
+
+select:focus{
+  outline-color: #0ead69;
+}
+
+textarea{
+  border-color: #3bceac;
+  border-radius: 3px;
+}
+textarea:focus{
+  outline-color: #0ead69;
+}
+
+#form-b{
+  display: flex;
+  margin-top: 2%;
+  margin-left: 7%;
+  margin-right: 9%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name{
+  border-color: #3bceac;
+}
+
+.date{
+  border-color: #3bceac;
+
+}
+
+.peso{
+  border-color: #3bceac;
+
+}
+
+.altura{
+  border-color: #3bceac;
+
+}
+
+.cpf{
+  border-color: #3bceac;
+
+}
+
+.plano{
+  border-color: #3bceac;
+
+}
+
+::-webkit-input-placeholder{
+  color: #ff2e00;
+  font-family: 'ubuntu', serif;
+  font-size: 12px;
+}
+
+#botao-cadastrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #0ead69;
+  font-family: 'philosopher', sans-serif;
+  border-radius: 8px;
+  border-color: #3bceac;
+
+}
+
+.cadastrar{
+  margin-top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#botao-cadastrar:hover{
+  background-color: #08814d;
+  transform-origin: center;
+  transition: 500ms;
+}

@@ -9,11 +9,26 @@ const routes: Routes = [
     path: 'home',
     loadChildren: ()=> import('./home/home.module').then(m => m.HomeModule)
   },{
-    path: 'areaNutricionista',
+    path: 'area-nutricionista',
     loadChildren: ()=> import('./nutricionista/nutricionista.module').then(m => m.NutricionistaModule)
   },{
-    path: 'cadastrarNutricionista',
+    path: 'cadastrar-nutricionista',
     loadChildren: ()=> import('./cadastrar-nutricionista/cadastrar-nutricionista.module').then(m => m.CadastrarNutricionistaModule)
+  },{
+    path: 'edita-nutricionista',
+    loadChildren: ()=> import('./edita-nutricionista/edita-nutricionista.module').then(m => m.EditaNutricionistaModule)
+  },{
+    path: 'area-paciente',
+    loadChildren: ()=> import('./paciente/paciente.module').then(m => m.PacienteModule)
+  },{
+    path: 'cadastrar-paciente',
+    loadChildren: ()=> import('./cadastrar-paciente/cadastrar-paciente.module').then(m => m.CadastrarPacienteModule)
+  },{
+    path: 'editar-paciente',
+    loadChildren: ()=> import('./editar-paciente/editar-paciente.module').then(m => m.EditarPacienteModule)
+  },{
+    path: 'consulta',
+    loadChildren: ()=> import('./consulta/consulta.module').then(m => m.ConsultaModule)
   }
 ];
 

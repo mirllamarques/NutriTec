@@ -7,19 +7,20 @@
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
+
     <button mat-menu-item>
       <mat-icon id= "icone">person</mat-icon>
-      <span>Paciente</span>
+      <a href="http://localhost:4200/area-paciente" class="area-paciente"><span>Paciente</span></a>
     </button>
 
     <button mat-menu-item>
       <mat-icon id= "icone">local_hospital</mat-icon>
-      <a href="http://localhost:4200/areaNutricionista" class="area-nutri"><span> Nutricionista</span></a>
+      <a href="http://localhost:4200/area-nutricionista" class="area-nutri"><span> Nutricionista</span></a>
     </button>
-    
+
     <button mat-menu-item>
       <mat-icon id="icone">timeline</mat-icon>
-      <span> Dashboard</span>
+      <a href=><span> Dashboard</span></a>
     </button>
   </mat-menu>
 
@@ -27,7 +28,7 @@
   <span class="example-spacer"></span>
 
   <button mat-icon-button class="consulta">
-    <a href="">
+    <a href="http://localhost:4200/consulta">
       Consulta
     </a>
   </button>
