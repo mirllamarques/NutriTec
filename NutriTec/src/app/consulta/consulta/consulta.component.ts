@@ -59,25 +59,5 @@ const ELEMENT_DATA: PeriodicElement[] = [
     Plano: 'Plano Vida',
     Nome: 'Carbon',
     Especialidade: 'Geral',
-  },
-  {
-    Plano: 'Plano Vida',
-    Nome: 'Nitrogen',
-    Especialidade: 'Dietas para crianças',
-  },
-  {
-    Plano: 'Plano Vida',
-    Nome: 'Oxygen',
-    Especialidade: 'Dietas para emagrecer',
-  },
-  {
-    Plano: 'Plano Vida',
-    Nome: 'Fluorine',
-    Especialidade: 'Dietas para emagrecer',
-  },
-  {
-    Plano: 'Plano Vida',
-    Nome: 'Neon',
-    Especialidade: 'Dietas para emagrecer',
-  },
+  }
 ];
