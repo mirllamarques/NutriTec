@@ -17,67 +17,67 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 export class ConsultaComponent {
 
   dataSource = ELEMENT_DATA;
-  columnsToDisplay = ['plano', 'nome', 'especialidade'];
+  columnsToDisplay = ['Plano', 'Nome', 'Especialidade'];
   expandedElement: PeriodicElement | null | undefined;
 
 }
 export interface PeriodicElement {
-  plano: string;
-  nome: string;
-  especialidade: string;
+  Plano: string;
+  Nome: string;
+  Especialidade: string;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
   {
-    plano: '1',
-    nome: 'Hydrogen',
-    especialidade: '1.0079',
+    Plano: 'Plano Vida',
+    Nome: 'Hydrogen',
+    Especialidade: 'Desporto',
 
   },
   {
-    plano: '2',
-    nome: 'Helium',
-    especialidade: '0026',
+    Plano: 'Plano Vida',
+    Nome: 'Helium',
+    Especialidade: 'Nutrologo',
 
   },
   {
-    plano: '3',
-    nome: 'Lithium',
-    especialidade: '6.941',
+    Plano: 'Plano Vida',
+    Nome: 'Lithium',
+    Especialidade: 'Dietas com foco em ganho de massa',
 
   },
   {
-    plano: '4',
-    nome: 'Beryllium',
-    especialidade: '9.0122',
+    Plano: 'Plano Vida',
+    Nome: 'Beryllium',
+    Especialidade: 'Dietas para redução de gordura',
   },
   {
-    plano: '5',
-    nome: 'Boron',
-    especialidade: '10.811',
+    Plano: 'Plano Vida',
+    Nome: 'Boron',
+    Especialidade: 'Dietas para redução de açúcar',
     },
   {
-    plano: '6',
-    nome: 'Carbon',
-    especialidade: '12.0107',
+    Plano: 'Plano Vida',
+    Nome: 'Carbon',
+    Especialidade: 'Geral',
   },
   {
-    plano: '7',
-    nome: 'Nitrogen',
-    especialidade: '14.0067',
+    Plano: 'Plano Vida',
+    Nome: 'Nitrogen',
+    Especialidade: 'Dietas para crianças',
   },
   {
-    plano: '8',
-    nome: 'Oxygen',
-    especialidade: '15.9994',
+    Plano: 'Plano Vida',
+    Nome: 'Oxygen',
+    Especialidade: 'Dietas para emagrecer',
   },
   {
-    plano: '9',
-    nome: 'Fluorine',
-    especialidade: '18.9984',
+    Plano: 'Plano Vida',
+    Nome: 'Fluorine',
+    Especialidade: 'Dietas para emagrecer',
   },
   {
-    plano: '10',
-    nome: 'Neon',
-    especialidade: '20.1797',
+    Plano: 'Plano Vida',
+    Nome: 'Neon',
+    Especialidade: 'Dietas para emagrecer',
   },
 ];

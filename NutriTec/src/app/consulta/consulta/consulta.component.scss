@@ -1,5 +1,13 @@
 table {
-  width: 100%;
+  border-radius: 8px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+}
+
+#header{
+  width: 300px;
 }
 
 tr.example-detail-row {
@@ -23,16 +31,44 @@ tr.example-element-row:not(.example-expanded-row):active {
   display: flex;
 }
 
-.example-element-symbol {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: normal;
-}
 
 .example-element-description {
   padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .example-element-description-attribution {
   opacity: 0.5;
+}
+
+h1{
+  color: #0ead69;
+  font-family: 'philosopher', sans-serif;
+}
+
+form{
+ margin-left: auto;
+}
+
+#input{
+  border: 1px solid;
+  border-color: #0ead69;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-left: 15px;
+  color: #ff2e00;
+}
+
+button{
+  margin-top: 30px;
+  margin-left: 130px;
+  width: 90px;
+  height: 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #0ead69;
+  font-family: 'philosopher', sans-serif;
+  border-radius: 5px;
+  border-color: #3bceac;
 }
