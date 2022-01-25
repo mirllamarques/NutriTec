@@ -29,6 +29,15 @@ const routes: Routes = [
   },{
     path: 'consulta',
     loadChildren: ()=> import('./consulta/consulta.module').then(m => m.ConsultaModule)
+  },{
+    path: 'agendada',
+    loadChildren: ()=> import('./agendada/agendada.module').then(m => m.AgendadaModule)
+  },{
+    path: 'dashboards',
+    loadChildren: ()=> import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
+  },{
+    path: 'falha',
+    loadChildren: ()=> import('./falha/falha.module').then(m => m.FalhaModule)
   }
 ];
 

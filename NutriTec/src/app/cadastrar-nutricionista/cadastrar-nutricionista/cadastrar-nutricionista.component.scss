@@ -52,12 +52,14 @@ h1{
 }
 
 .date{
+  border: 1px solid #3bceac;
+  border-radius: 3px;
+  height: 28px;
+  outline-color: #3bceac;
   color:#ff2e00;
-  border-color: #3bceac;
-  background-color: white;
-  display: flexbox;
-  width: 300px;
-
+  font-family: 'philosopher', sans-serif;
+  font-size: 14px;
+  width: 200px;
 }
 
 .especialidade{
@@ -83,6 +85,7 @@ label{
   font-family: 'philosopher', sans-serif;
   color: #ff2e00;
   font-size: medium;
+  display: flex;
 }
 
 .planos{
@@ -113,6 +116,14 @@ input[type=checkbox]{
   vertical-align: middle;
   margin-bottom: 3px;
   margin-right: 8px;
+}
+
+select:focus{
+  outline-color: #0ead69;
+}
+
+textarea:focus{
+  outline-color: #0ead69;
 }
 
 .pvida input:checked + label::before{
@@ -156,6 +167,15 @@ input[type=checkbox]{
   background-color: limegreen;
 }
 
+
+::-webkit-input-placeholder{
+  color: #ff2e00;
+  font-family: 'ubuntu', serif;
+  font-size: 14px;
+  padding-top: 1px;
+  padding-left: 10px;
+}
+
 #botao-cadastrar{
   display: flex;
   align-items: center;
@@ -180,10 +200,4 @@ input[type=checkbox]{
 #botao-cadastrar:hover{
   background-color: #08814d;
   transition: 500ms;
-}
-
-::-webkit-input-placeholder{
-  color: #ff2e00;
-  font-family: 'ubuntu', serif;
-  font-size: 12px;
 }

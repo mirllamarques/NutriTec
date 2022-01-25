@@ -27,6 +27,7 @@ label{
   display: flex;
   color: #ff2e00;
   font-family: 'philosopher', sans-serif;
+  font-size: 17px;
 }
 option{
 
@@ -46,11 +47,21 @@ select:focus{
 textarea{
   border-color: #3bceac;
   border-radius: 3px;
+  height: 22px;
 }
 textarea:focus{
   outline-color: #0ead69;
 }
 
+input{
+  border-color: #3bceac;
+  border-radius: 3px;
+  height: 22px;
+}
+input:focus{
+  outline-color: #0ead69;
+
+}
 #form-b{
   display: flex;
   margin-top: 2%;
@@ -66,8 +77,13 @@ textarea:focus{
 }
 
 .date{
-  border-color: #3bceac;
-
+  border: 1px solid #3bceac;
+  border-radius: 3px;
+  height: 28px;
+  outline-color: #3bceac;
+  color:#ff2e00;
+  font-family: 'philosopher', sans-serif;
+  font-size: 14px;
 }
 
 .peso{
@@ -93,7 +109,9 @@ textarea:focus{
 ::-webkit-input-placeholder{
   color: #ff2e00;
   font-family: 'ubuntu', serif;
-  font-size: 12px;
+  font-size: 13px;
+  padding-top: 4px;
+  padding-left: 15px;
 }
 
 #botao-atualizar{

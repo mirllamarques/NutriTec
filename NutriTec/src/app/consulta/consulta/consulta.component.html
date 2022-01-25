@@ -1,46 +1,66 @@
-<br>
-<table mat-table
-       [dataSource]="dataSource" multiTemplateDataRows
-       class="mat-elevation-z8">
-  <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
-    <th mat-header-cell *matHeaderCellDef id="header"> {{column}} </th>
-    <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
-  </ng-container>
+<div class="titulo">
+  <h1>Encontre aqui um nutricionista para você!</h1>
+</div>
 
-  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
-  <ng-container matColumnDef="expandedDetail">
-    <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
-      <div class="example-element-detail"
-           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+<div class="pesquisa">
+  <form action="" method="get" class="formulario">
+    <input type="name" name = "name" autocomplete = "on" class="search" placeholder="Digite seu nome">
+    <button class="botaopesquisa" type="submit"><img src="../../../assets/search.png"></button>
+  </form>
+</div>
 
-        <div class="example-element-description">
-          <h1>Agendar Consulta com {{element.Nome}}</h1>
-          <form action="" method="post">
-          <input type="date" id="input" required/>
-          <select class="horario" required id= "input">
-            <option value="" disabled selected>Selecione o horário</option>
-            <option value="1">8:00 - 8:30</option>
-            <option value="2">8:30 - 9:00</option>
-            <option value="3">9:00 - 9:30</option>
-            <option value="4">9:30 - 10:00</option>
-            <option value="5">10:00 - 10:30</option>
-            <option value="6">10:30 - 11:00</option>
-          </select>
-          <div class="botao">
-            <button type="submit">Agendar</button>
+
+<div class="novocadastro">
+  <a href="http://localhost:4200/cadastrar-paciente" class="semcadastro"> Não possuo cadastro</a>
+</div>
+
+
+<div class="disp">
+  <h1>Disponíveis</h1>
+</div>
+<div class="tabela"> <br>
+  <table mat-table
+        [dataSource]="dataSource" multiTemplateDataRows
+        class="mat-elevation-z8">
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+      <th mat-header-cell *matHeaderCellDef id="header"> {{column}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+    </ng-container>
+
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+    <ng-container matColumnDef="expandedDetail">
+      <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+        <div class="example-element-detail"
+            [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+
+          <div class="example-element-description">
+            <h2>Agendar Consulta com {{element.Nome}}</h2>
+            <form action="" method="post">
+            <input type="date" id="input" required/>
+            <select class="horario" required id= "input">
+              <option value="" disabled selected>Selecione o horário</option>
+              <option value="1">8:00 - 8:30</option>
+              <option value="2">8:30 - 9:00</option>
+              <option value="3">9:00 - 9:30</option>
+              <option value="4">9:30 - 10:00</option>
+              <option value="5">10:00 - 10:30</option>
+              <option value="6">10:30 - 11:00</option>
+            </select>
+            <div class="botao">
+              <button type="submit">Agendar</button>
+            </div>
+          </form>
           </div>
-        </form>
         </div>
-      </div>
-    </td>
-  </ng-container>
+      </td>
+    </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-  <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
-      class="example-element-row"
-      [class.example-expanded-row]="expandedElement === element"
-      (click)="expandedElement = expandedElement === element ? null : element">
-  </tr>
-  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
-</table>
-<br>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let element; columns: columnsToDisplay;"
+        class="example-element-row"
+        [class.example-expanded-row]="expandedElement === element"
+        (click)="expandedElement = expandedElement === element ? null : element">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+  </table>
+  <br>
