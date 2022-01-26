@@ -90,7 +90,7 @@ button{
 }
 
 .botaopesquisa{
-  background-color: white;
+  background-color:  #0ead69;
   justify-content: center;
   width: 40px;
   margin: 0;
@@ -128,8 +128,8 @@ h1{
 }
 
 img{
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .novocadastro{
@@ -153,4 +153,23 @@ img{
   align-items: center;
   justify-content:center;
   margin-top: 1.5%;
+}
+
+#delete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 160px;
+  background-color: #ff2e00;
+}
+.cancelar{
+  display: block;
+  margin-left: 34.7%;
+  margin-right: 50%;
+}
+
+#delete:hover
+{
+  background-color: #a32003;
 }

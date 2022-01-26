@@ -1,0 +1,29 @@
+img{
+  width: 280px;
+  height: 280px;
+
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: 'philosopher', sans-serif;
+  color: #3bceac;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+h2{
+  font-family: 'ubuntu', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 30px;
+  font-weight: 100;
+}

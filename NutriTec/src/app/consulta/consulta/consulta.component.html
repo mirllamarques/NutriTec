@@ -5,7 +5,7 @@
 <div class="pesquisa">
   <form action="" method="get" class="formulario">
     <input type="name" name = "name" autocomplete = "on" class="search" placeholder="Digite seu nome" required>
-    <button class="botaopesquisa" type="submit"><img src="../../../assets/search.png"></button>
+    <button class="botaopesquisa" type="submit"><img src="../../../assets/searchsvg.svg"></button>
   </form>
 </div>
 
@@ -14,6 +14,9 @@
   <a href="http://localhost:4200/cadastrar-paciente" class="semcadastro"> Não possuo cadastro</a>
 </div>
 
+<div class="cancelar">
+  <button mat-fab  mat-button (click)="openDialog()" id="delete">Cancelar</button>
+</div>
 
 <div class="disp">
   <h1>Disponíveis</h1>

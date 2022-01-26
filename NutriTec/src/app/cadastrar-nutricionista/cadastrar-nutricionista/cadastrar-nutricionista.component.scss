@@ -201,3 +201,7 @@ textarea:focus{
   background-color: #08814d;
   transition: 500ms;
 }
+
+textarea{
+  resize: none;
+}
