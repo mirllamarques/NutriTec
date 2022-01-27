@@ -1,5 +1,7 @@
 import { Component} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import { MatDialog } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @Component({
@@ -14,13 +16,28 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
     ]),
   ],
 })
+
+
 export class ConsultaComponent {
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(DialogElemento);
+  }
 
   dataSource = ELEMENT_DATA;
   columnsToDisplay = ['Plano', 'Nome', 'Especialidade'];
   expandedElement: PeriodicElement | null | undefined;
 
 }
+
+@Component({
+  selector: 'dialog-elemento',
+  templateUrl: './dialog-elemento.html',
+})
+export class DialogElemento {}
+
 export interface PeriodicElement {
   Plano: string;
   Nome: string;

@@ -142,3 +142,7 @@ input:focus{
   transform-origin: center;
   transition: 500ms;
 }
+
+textarea{
+  resize: none;
+}

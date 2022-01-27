@@ -1,0 +1,28 @@
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  height: 350px;
+  width: 350px;
+}
+
+h1{
+  color: #3bceac;
+  font-family: 'philosopher', sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 29px;
+}
+
+h2{
+  color: #0ead69;
+  font-family: 'ubuntu', serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 900;
+}

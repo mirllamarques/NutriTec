@@ -38,6 +38,9 @@ const routes: Routes = [
   },{
     path: 'falha',
     loadChildren: ()=> import('./falha/falha.module').then(m => m.FalhaModule)
+  },{
+    path: 'cadastrado',
+    loadChildren: ()=> import('./cadastro/cadastro.module').then(m => m.CadastroModule)
   }
 ];
 
