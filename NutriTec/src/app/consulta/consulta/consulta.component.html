@@ -14,8 +14,17 @@
   <a href="http://localhost:4200/cadastrar-paciente" class="semcadastro"> Não possuo cadastro</a>
 </div>
 
-<div class="cancelar">
-  <button mat-fab  mat-button (click)="openDialog()" id="delete">Cancelar</button>
+<div class="botoes">
+  <div class="cancelar">
+    <button mat-fab  mat-button (click)="openDialog()" id="delete">Cancelar</button>
+  </div>
+
+  <div class="listar">
+    <a href="http://localhost:4200/lista-consulta">
+      <button mat-fab  mat-button id="list">Consultas</button>
+    </a>
+  </div>
+
 </div>
 
 <div class="disp">

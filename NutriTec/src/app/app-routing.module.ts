@@ -41,6 +41,15 @@ const routes: Routes = [
   },{
     path: 'cadastrado',
     loadChildren: ()=> import('./cadastro/cadastro.module').then(m => m.CadastroModule)
+  },{
+    path: 'lista-nutricionista',
+    loadChildren: ()=> import('./lista-nutricionista/lista-nutricionista.module').then(m => m.ListaNutricionistaModule)
+  },{
+    path: 'lista-paciente',
+    loadChildren: ()=> import('./lista-paciente/lista-paciente.module').then(m => m.ListaPacienteModule)
+  },{
+    path: 'lista-consulta',
+    loadChildren: ()=> import('./lista-consulta/lista-consulta.module').then(m => m.ListaConsultaModule)
   }
 ];
 
