@@ -63,15 +63,15 @@ h2{
 
 button{
   margin-top: 30px;
-  margin-left: 130px;
+  margin-left: 20px;
   width: 90px;
   height: 30px;
   font-size: 18px;
   color: white;
-  background-color: #0ead69;
   font-family: 'philosopher', sans-serif;
   border-radius: 5px;
   border-color: #3bceac;
+  background-color: #0ead69;
 }
 
 .pesquisa{
@@ -162,14 +162,38 @@ img{
   padding: 20px;
   width: 160px;
   background-color: #ff2e00;
+  font-family: 'philosopher', sans-serif;
 }
-.cancelar{
-  display: block;
-  margin-left: 34.7%;
-  margin-right: 50%;
+
+#list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 160px;
+  background-color: #ffd23f;
+  font-family: 'philosopher', sans-serif;
+  text-decoration:none;
+}
+#list:hover{
+  background-color: #cea318;
+}
+
+a{
+  text-decoration: none;
+}
+.botoes{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #delete:hover
 {
   background-color: #a32003;
+}
+
+button:hover{
+  background-color: #08814d;
+  transition: 450ms;
 }
