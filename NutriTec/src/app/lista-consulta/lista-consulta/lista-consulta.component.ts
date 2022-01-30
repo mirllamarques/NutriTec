@@ -6,7 +6,7 @@ export interface PeriodicElement {
   plano: string;
   paciente: string;
   data: string;
-  hora: string
+  hora: string;
 }
 
 @Component({
