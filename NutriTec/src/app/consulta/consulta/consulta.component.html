@@ -48,11 +48,11 @@
           <div class="example-element-description">
             <h2>Agendar Consulta com {{element.Nome}}</h2>
             <form method="post">
-              <input [(ngModel)]="consulta.nutricionista" type="text" value="{{element.Matricula}}" style="display: none;">
-              <input [(ngModel)]="consulta.data" type="date" id="input" required/>
-              <input type="text" [(ngModel)]= "consulta.cpf" class="cpf" required id= "input" placeholder="CPF">
+              <input type="text" style="display: none;">
+              <input type="date" id="input" required/>
+              <input type="text" class="cpf" required id= "input" placeholder="CPF">
               <div class="botao">
-              <button (click)="criar()" type="submit" id= "submit">Agendar</button>
+              <button type="submit" id= "submit">Agendar</button>
             </div>
           </form>
           </div>

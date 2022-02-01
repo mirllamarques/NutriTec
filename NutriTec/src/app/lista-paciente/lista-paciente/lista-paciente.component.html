@@ -2,17 +2,23 @@
   <h1>Pacientes</h1>
 </div>
 <br>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <table mat-table class="mat-elevation-z8" [dataSource]="pacientes">
 
     <ng-container matColumnDef="plano">
       <th mat-header-cell *matHeaderCellDef> Plano </th>
-      <td mat-cell *matCellDef="let element"> {{element.plano}} </td>
+      <td mat-cell *matCellDef="let row"> {{row.plano}} </td>
     </ng-container>
 
     <ng-container matColumnDef="paciente">
       <th mat-header-cell *matHeaderCellDef> Paciente </th>
-      <td mat-cell *matCellDef="let element"> {{element.paciente}} </td>
+      <td mat-cell *matCellDef="let row"> {{row.paciente}} </td>
     </ng-container>
+
+    <ng-container matColumnDef="cpf">
+      <th mat-header-cell *matHeaderCellDef> CPF </th>
+      <td mat-cell *matCellDef="let row"> {{row.cpf}} </td>
+    </ng-container>
+
 
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

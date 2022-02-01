@@ -3,8 +3,8 @@ import { ConsultaService } from './../consulta.service';
 import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { MatDialog } from '@angular/material/dialog';
-import { MatIconModule } from '@angular/material/icon';
-import { Router } from '@angular/router';
+import { Router} from '@angular/router';
+
 
 
 @Component({
@@ -23,27 +23,11 @@ import { Router } from '@angular/router';
 
 export class ConsultaComponent implements OnInit{
 
-  consultas: Consulta[] =[];
-
-  ngOnInit(): void {
+  ngOnInit(){
 
   }
 
-  findAll(){
-    this.service.findAll().subscribe(resposta => this.consultas = resposta);
-  }
-
-  consulta: Consulta = {
-    data: '',
-    nutricionista: '',
-    cpf: ''
-  };
-
-  constructor(public dialog: MatDialog, private service: ConsultaService, private router: Router) {}
-
-  criar(){
-    this.service.criar(this.consulta).subscribe(resposta => {this.router.navigate(['agendada'])})
-  }
+  constructor(public dialog: MatDialog) {}
 
   openDialog() {
     this.dialog.open(DialogElemento);
