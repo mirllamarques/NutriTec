@@ -36,6 +36,9 @@ const routes: Routes = [
     path: 'dashboards',
     loadChildren: ()=> import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
   },{
+    path: 'falha',
+    loadChildren: ()=> import('./falha/falha.module').then(m => m.FalhaModule)
+  },{
     path: 'cadastrado',
     loadChildren: ()=> import('./cadastro/cadastro.module').then(m => m.CadastroModule)
   },{
