@@ -1,8 +1,7 @@
-import { ConsultaService } from './../consulta.service';
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { MatDialog } from '@angular/material/dialog';
-import {FormGroup, NgForm } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @Component({
@@ -19,24 +18,9 @@ import {FormGroup, NgForm } from '@angular/forms';
 })
 
 
-export class ConsultaComponent implements OnInit{
+export class ConsultaComponent {
 
-  consultas:Array<any>;
-  consulta: any;
-
-  constructor(public dialog: MatDialog, private service: ConsultaService) {}
-
-  ngOnInit(){
-    this.consulta = {};
-  }
-
-  criar(frm: NgForm){
-    this.service.criar(this.consulta).subscribe(resposta => {
-      this.consulta.push(resposta);
-      frm.reset();
-
-    })
-  }
+  constructor(public dialog: MatDialog) {}
 
   openDialog() {
     this.dialog.open(DialogElemento);

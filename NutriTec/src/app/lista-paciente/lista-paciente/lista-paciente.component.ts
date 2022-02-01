@@ -19,9 +19,9 @@ export class ListaPacienteComponent {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {plano: 'Plano Vida', paciente: 'Hydrogen'},
-  {plano: 'Plano Vida', paciente: 'Helium'},
-  {plano: 'Plano Vida', paciente: 'Lithium'},
-  {plano: 'Plano Vida', paciente: 'Beryllium'},
-  {plano: 'Plano Vida', paciente: 'Boron'}
+  {plano: '1', paciente: 'Hydrogen'},
+  {plano: '2', paciente: 'Helium'},
+  {plano: '3', paciente: 'Lithium'},
+  {plano: '4', paciente: 'Beryllium'},
+  {plano: '5', paciente: 'Boron'}
 ];
