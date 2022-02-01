@@ -1,8 +1,10 @@
+import { Consulta } from './../consulta.model';
 import { ConsultaService } from './../consulta.service';
 import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 import { MatDialog } from '@angular/material/dialog';
-import {FormGroup, NgForm } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,21 +23,26 @@ import {FormGroup, NgForm } from '@angular/forms';
 
 export class ConsultaComponent implements OnInit{
 
-  consultas:Array<any>;
-  consulta: any;
+  consultas: Consulta[] =[];
 
-  constructor(public dialog: MatDialog, private service: ConsultaService) {}
+  ngOnInit(): void {
 
-  ngOnInit(){
-    this.consulta = {};
   }
 
-  criar(frm: NgForm){
-    this.service.criar(this.consulta).subscribe(resposta => {
-      this.consulta.push(resposta);
-      frm.reset();
+  findAll(){
+    this.service.findAll().subscribe(resposta => this.consultas = resposta);
+  }
 
-    })
+  consulta: Consulta = {
+    data: '',
+    nutricionista: '',
+    cpf: ''
+  };
+
+  constructor(public dialog: MatDialog, private service: ConsultaService, private router: Router) {}
+
+  criar(){
+    this.service.criar(this.consulta).subscribe(resposta => {this.router.navigate(['agendada'])})
   }
 
   openDialog() {
@@ -43,7 +50,7 @@ export class ConsultaComponent implements OnInit{
   }
 
   dataSource = ELEMENT_DATA;
-  columnsToDisplay = ['Plano', 'Nome', 'Especialidade'];
+  columnsToDisplay = ['Plano','Matricula', 'Nome', 'Especialidade'];
   expandedElement: PeriodicElement | null | undefined;
 
 }
@@ -56,40 +63,48 @@ export class DialogElemento {}
 
 export interface PeriodicElement {
   Plano: string;
+  Matricula: string;
   Nome: string;
   Especialidade: string;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
   {
     Plano: 'Plano Vida',
+    Matricula: '1234567',
     Nome: 'Hydrogen',
     Especialidade: 'Desporto',
+
 
   },
   {
     Plano: 'Plano Vida',
+    Matricula: '1234561',
     Nome: 'Helium',
     Especialidade: 'Nutrologo',
 
   },
   {
     Plano: 'Plano Vida',
+    Matricula: '1234562',
     Nome: 'Lithium',
     Especialidade: 'Dietas com foco em ganho de massa',
 
   },
   {
     Plano: 'Plano Vida',
+    Matricula: '1234563',
     Nome: 'Beryllium',
     Especialidade: 'Dietas para redução de gordura',
   },
   {
     Plano: 'Plano Vida',
+    Matricula: '1234564',
     Nome: 'Boron',
     Especialidade: 'Dietas para redução de açúcar',
     },
   {
     Plano: 'Plano Vida',
+    Matricula: '1234565',
     Nome: 'Carbon',
     Especialidade: 'Geral',
   }
