@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://nutritecback.herokuapp.com/'
+  baseUrl: 'http://143.198.169.93:8080'
 };
 
 /*
