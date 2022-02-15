@@ -4,17 +4,17 @@
 <br>
   <table mat-table class="mat-elevation-z8" [dataSource]="pacientes">
 
-    <ng-container matColumnDef="plano">
+    <ng-container matColumnDef="healthPlan">
       <th mat-header-cell *matHeaderCellDef> Plano </th>
       <td mat-cell *matCellDef="let row"> {{row.healthPlan}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="paciente">
+    <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Paciente </th>
       <td mat-cell *matCellDef="let row"> {{row.name}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="cpf">
+    <ng-container matColumnDef="CPF">
       <th mat-header-cell *matHeaderCellDef> CPF </th>
       <td mat-cell *matCellDef="let row"> {{row.CPF}} </td>
     </ng-container>

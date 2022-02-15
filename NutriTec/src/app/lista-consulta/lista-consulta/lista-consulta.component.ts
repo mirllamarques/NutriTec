@@ -21,16 +21,14 @@ export class ListaConsultaComponent{
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {plano: '1', nutricionista: 'Hydrogen', paciente: '1.0079', data: '10/11'},
-  {plano: '2', nutricionista: 'Helium', paciente: '4.0026', data: '10/11'},
-  {plano: '3', nutricionista: 'Lithium', paciente: '6.941', data: '10/11'},
-  {plano: '4', nutricionista: 'Beryllium', paciente: '9.0122', data: '10/11'},
-  {plano: '5', nutricionista: 'Boron', paciente: '10.811', data: '10/11'},
-  {plano: '6', nutricionista: 'Carbon', paciente: '12.0107', data: '10/11'},
-  {plano: '7', nutricionista: 'Nitrogen', paciente: '14.0067', data: '10/11'},
-  {plano: '8', nutricionista: 'Oxygen', paciente: '15.9994', data: '10/11'},
-  {plano: '9', nutricionista: 'Fluorine', paciente: '18.9984', data: '10/11'},
-  {plano: '10', nutricionista: 'Neon', paciente: '20.1797', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Paulo', paciente: 'Luana', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Joseph', paciente: 'Lucas', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Joseph', paciente: 'Rafael', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Marina', paciente: 'José', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Paloma', paciente: 'Vitória', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Aurora', paciente: 'Maria', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Paulo', paciente: 'Ronaldo', data: '10/11'},
+  {plano: 'Plano Vida', nutricionista: 'Joseph', paciente: 'Priscilla', data: '10/11'}
 ];
 
 

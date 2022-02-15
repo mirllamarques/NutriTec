@@ -55,7 +55,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     Plano: 'Plano Vida',
     Matricula: '1234567',
-    Nome: 'Hydrogen',
+    Nome: 'Paulo',
     Especialidade: 'Desporto',
 
 
@@ -63,33 +63,33 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {
     Plano: 'Plano Vida',
     Matricula: '1234561',
-    Nome: 'Helium',
+    Nome: 'Joseph',
     Especialidade: 'Nutrologo',
 
   },
   {
     Plano: 'Plano Vida',
     Matricula: '1234562',
-    Nome: 'Lithium',
+    Nome: 'Thiago',
     Especialidade: 'Dietas com foco em ganho de massa',
 
   },
   {
     Plano: 'Plano Vida',
     Matricula: '1234563',
-    Nome: 'Beryllium',
+    Nome: 'Marina',
     Especialidade: 'Dietas para redução de gordura',
   },
   {
     Plano: 'Plano Vida',
     Matricula: '1234564',
-    Nome: 'Boron',
+    Nome: 'Paloma',
     Especialidade: 'Dietas para redução de açúcar',
     },
   {
     Plano: 'Plano Vida',
     Matricula: '1234565',
-    Nome: 'Carbon',
+    Nome: 'Aurora',
     Especialidade: 'Geral',
   }
 ];
