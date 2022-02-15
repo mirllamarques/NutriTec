@@ -1,5 +1,10 @@
 export interface Paciente{
- plano: string;
- nome: string;
- cpf: string;
-}
+
+  CPF: string;
+  name: string;
+  age: bigint;
+  weight: number;
+  height: number;
+  healthPlan: string;
+
+  }

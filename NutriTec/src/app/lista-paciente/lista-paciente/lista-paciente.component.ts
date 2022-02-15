@@ -14,7 +14,7 @@ export interface PeriodicElement {
 })
 export class ListaPacienteComponent implements OnInit{
 
-  displayedColumns: string[] = ['plano', 'paciente', 'cpf'];
+  displayedColumns: string[] = ['CPF', 'name', 'age', 'weight', 'height', 'healthPlan'];
 
   constructor(private service: ListaPacienteService){}
 
