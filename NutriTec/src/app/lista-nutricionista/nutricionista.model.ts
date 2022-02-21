@@ -1,6 +1,6 @@
 export interface Nutricionista{
-  plano: string;
-  nome: string;
-  especialidade: string;
-  matricula: string;
+  healthPlan: string;
+  name: string;
+  speciality: string;
+  registration: string;
 }

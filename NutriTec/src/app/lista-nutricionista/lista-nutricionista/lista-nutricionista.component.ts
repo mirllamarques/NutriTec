@@ -9,7 +9,7 @@ import { ListaNutricionistaService } from '../lista-nutricionista.service';
 })
 export class ListaNutricionistaComponent implements OnInit{
 
-  displayedColumns: string[] = ['plano', 'nutricionista', 'especialidade', 'matricula'];
+  displayedColumns: string[] = ['healthPlan', 'name', 'speciality', 'registration'];
 
   constructor(private service: ListaNutricionistaService){}
 
