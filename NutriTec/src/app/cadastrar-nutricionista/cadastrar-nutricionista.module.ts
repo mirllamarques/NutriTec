@@ -6,6 +6,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {Component} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 import { CadastrarNutricionistaRoutingModule } from './cadastrar-nutricionista-routing.module';
 import { CadastrarNutricionistaComponent } from './cadastrar-nutricionista/cadastrar-nutricionista.component';
@@ -22,7 +24,8 @@ import { CadastrarNutricionistaComponent } from './cadastrar-nutricionista/cadas
     MatDatepickerModule,
     MatNativeDateModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule
   ]
 })
 export class CadastrarNutricionistaModule { }

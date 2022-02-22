@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Nutricionista } from './../../lista-nutricionista/nutricionista.model';
 import { CadastrarNutricionistaService } from './../cadastrar-nutricionista.service';
 import { Component, OnInit } from '@angular/core';
@@ -16,14 +17,24 @@ export class CadastrarNutricionistaComponent implements OnInit {
     registration: ''
   };
 
-  constructor(private service: CadastrarNutricionistaService) { }
+  constructor(private service: CadastrarNutricionistaService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   create(): void{
     this.service.create(this.nutricionista).subscribe((resposta ) =>{
-      console.log(resposta)
+      this.router.navigate(['cadastrado'])
+      this.service.mensagem('Nutricionista cadastrado com sucesso!');
+
+    },
+    err=> {
+      for (let index = 0; index < err.error.errors.lenght; index++) {
+
+        this.service.mensagem(err.error.errors[index].message)
+
+
+      }
     }
     )
   }
