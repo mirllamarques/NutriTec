@@ -1,3 +1,5 @@
+import { Nutricionista } from './../../lista-nutricionista/nutricionista.model';
+import { CadastrarNutricionistaService } from './../cadastrar-nutricionista.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarNutricionistaComponent implements OnInit {
 
-  constructor() { }
+  nutricionista: Nutricionista = {
+    healthPlan: '',
+    name: '',
+    speciality: '',
+    registration: ''
+  };
+
+  constructor(private service: CadastrarNutricionistaService) { }
 
   ngOnInit(): void {
+  }
+
+  create(): void{
+    this.service.create(this.nutricionista).subscribe((resposta ) =>{
+      console.log(resposta)
+    }
+    )
   }
 
 }

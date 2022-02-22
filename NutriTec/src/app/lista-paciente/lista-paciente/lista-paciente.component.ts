@@ -28,6 +28,7 @@ export class ListaPacienteComponent implements OnInit{
     this.service.findAll().subscribe(resposta => {
       this.pacientes = resposta
     })
-
   }
+
+  
 }

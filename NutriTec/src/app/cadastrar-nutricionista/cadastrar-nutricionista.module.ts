@@ -5,7 +5,7 @@ import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {Component} from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { CadastrarNutricionistaRoutingModule } from './cadastrar-nutricionista-routing.module';
 import { CadastrarNutricionistaComponent } from './cadastrar-nutricionista/cadastrar-nutricionista.component';
@@ -21,7 +21,8 @@ import { CadastrarNutricionistaComponent } from './cadastrar-nutricionista/cadas
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule
   ]
 })
 export class CadastrarNutricionistaModule { }

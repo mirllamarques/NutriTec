@@ -1,6 +1,6 @@
 export interface Paciente{
 
-  CPF: string;
+  cpf: string;
   name: string;
   age: bigint;
   weight: number;

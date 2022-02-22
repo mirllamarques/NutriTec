@@ -7,26 +7,21 @@
 
     <div id="info">
       <label for="dados">Nome</label>
-      <textarea name="" id="value" cols="40" rows="1" placeholder="Nome Completo" class="name"></textarea>
+      <input [(ngModel)]="nutricionista.name" id="value" cols="40" rows="1" placeholder="Nome Completo" class="name" mat-input/>
     </div>
 
     <div id="info">
       <label for="dados">Especialidade</label>
-      <textarea name="" id="spec" cols="30" rows="1" class="especialidade" placeholder="Especialidade"></textarea>
+      <input [(ngModel)]="nutricionista.speciality" id="spec" cols="30" rows="1" class="especialidade" placeholder="Especialidade" mat-input/>
     </div>
 
   </div>
 
   <div id="formulario-b">
 
-    <div>
-      <label for="dados">Data de Nascimento</label>
-      <input type="date" id="input" class = date required/>
-    </div>
-
     <div id="info">
       <label for="dados">Matrícula</label>
-      <textarea name="" id="mat" cols="30" rows="1" class="matricula" placeholder="Matrícula"></textarea>
+      <input [(ngModel)]="nutricionista.registration" id="mat" cols="30" rows="1" class="matricula" placeholder="Matrícula" mat-input/>
     </div>
   </div>
 
@@ -35,24 +30,24 @@
   <div class="planos">
 
     <div class="pvida">
-      <input type="checkbox" name="" id="plano-vida">
+      <input type="checkbox" [(ngModel)]="nutricionista.healthPlan" id="plano-vida" mat-input/>
       <label for="plano-vida" class="nome-plano">Plano Vida</label>
     </div>
 
     <div class="hsaude">
-      <input type="checkbox" name="" id="hap-saude">
+      <input type="checkbox" [(ngModel)]="nutricionista.healthPlan" id="hap-saude" mat-input/>
       <label for="hap-saude" class="nome-plano">Hap Saúde</label>
     </div>
 
     <div class="umais">
-      <input type="checkbox" name="" id="ut-mais">
+      <input type="checkbox" [(ngModel)]="nutricionista.healthPlan" id="ut-mais" mat-input/>
       <label for="ut-mais" class="nome-plano">Ut Mais</label>
     </div>
 
   </div>
 
   <div class="cadastrar" >
-    <button id="botao-cadastrar">Cadastrar</button>
+    <button id="botao-cadastrar" (click)="create()">Cadastrar</button>
   </div>
 
 </form>
