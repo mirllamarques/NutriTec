@@ -3,4 +3,5 @@ export interface Nutricionista{
   name: string;
   speciality: string;
   registration: string;
+  age?: number;
 }

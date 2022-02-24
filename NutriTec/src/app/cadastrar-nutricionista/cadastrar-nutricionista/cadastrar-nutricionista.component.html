@@ -11,13 +11,22 @@
     </div>
 
     <div id="info">
+      <label for="dados">Matrícula</label>
+      <input [(ngModel)]="nutricionista.registration" name= "registration" id="mat" cols="30" rows="1" class="matricula" placeholder="Matrícula" mat-input/>
+    </div>
+
+  </div>
+
+  <div id="formulario-b">
+
+    <div id="info">
       <label for="dados">Especialidade</label>
-      <input [(ngModel)]="nutricionista.speciality" name= "speciality" id="spec" cols="30" rows="1" class="especialidade" placeholder="Especialidade" mat-input/>
+      <input [(ngModel)]="nutricionista.speciality" name= "speciality" id="spec" class="especialidade" placeholder="Especialidade" mat-input/>
     </div>
 
     <div id="info">
-      <label for="dados">Matrícula</label>
-      <input [(ngModel)]="nutricionista.registration" name= "registration" id="mat" cols="30" rows="1" class="matricula" placeholder="Matrícula" mat-input/>
+      <label for="dados">Idade</label>
+      <input [(ngModel)]="nutricionista.age" type="number" name="age" class="idade" placeholder="Idade" mat-input>
     </div>
   </div>
 

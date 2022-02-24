@@ -7,26 +7,26 @@
 
     <div id="info">
       <label for="dados">Nome</label>
-      <textarea name="" id="value" cols="40" rows="1" placeholder="Nome Completo" class="name"></textarea>
+      <input name="" id="value" cols="40" rows="1" placeholder="Nome Completo" class="name"/>
     </div>
 
     <div id="info">
       <label for="dados">Especialidade</label>
-      <textarea name="" id="spec" cols="30" rows="1" class="especialidade" placeholder="Especialidade"></textarea>
+      <input name="" id="spec" cols="30" rows="1" class="especialidade" placeholder="Especialidade"/>
     </div>
 
   </div>
 
   <div id="formulario-b">
 
-    <div>
-      <label for="dados">Data de Nascimento</label>
-      <input type="date" id="input" class = date required/>
+    <div id="info">
+      <label for="dados">Matrícula</label>
+      <input name="" id="mat" cols="30" rows="1" class="matricula" placeholder="Matrícula"/>
     </div>
 
     <div id="info">
-      <label for="dados">Matrícula</label>
-      <textarea name="" id="mat" cols="30" rows="1" class="matricula" placeholder="Matrícula"></textarea>
+      <label for="dados">Idade</label>
+      <input [(ngModel)]="nutricionista.age" type="number" name="age" class="idade" placeholder="Idade" mat-input>
     </div>
   </div>
 
@@ -34,20 +34,18 @@
 
   <div class="planos">
 
-    <div class="pvida">
-      <input type="checkbox" name="" id="plano-vida">
-      <label for="plano-vida" class="nome-plano">Plano Vida</label>
-    </div>
-
-    <div class="hsaude">
-      <input type="checkbox" name="" id="hap-saude">
-      <label for="hap-saude" class="nome-plano">Hap Saúde</label>
-    </div>
-
-    <div class="umais">
-      <input type="checkbox" name="" id="ut-mais">
-      <label for="ut-mais" class="nome-plano">Ut Mais</label>
-    </div>
+    <mat-form-field>
+      <mat-label>Planos</mat-label>
+      <mat-select [formControl]="toppings" [(ngModel)]="nutricionista.healthPlan" multiple>
+        <mat-select-trigger>
+          {{toppings.value ? toppings.value[0] : ''}}
+          <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+            (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+          </span>
+        </mat-select-trigger>
+        <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+      </mat-select>
+    </mat-form-field>
 
   </div>
 

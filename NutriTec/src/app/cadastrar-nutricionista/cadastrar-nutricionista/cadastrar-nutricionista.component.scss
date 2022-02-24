@@ -11,29 +11,29 @@ h1{
 #formulario-a{
   display: flex;
   margin-top: 3%;
-  margin-left: 15%;
+  margin-left: 23%;
+  margin-right: 28%;
   align-items: center;
   justify-content: space-between;
 }
 
+#formulario-b{
+  display: flex;
+  margin-top: 3%;
+  margin-left: 33%;
+  margin-right: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
 
 #value{
   border-color: #3bceac;
   border-radius: 3px;
   padding-left: 1%;
-  padding-right: 1%;
   margin-top: 1%;
 
 }
 
-#info{
-  padding-left: 1%;
-  padding-right: 1%;
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-
-}
 .name{
   color: #ff2e00;
   display: flexbox;
@@ -48,7 +48,15 @@ h1{
   border-color: #3bceac;
   color: #ff2e00;
   display: flexbox;
+  margin-right: 2%;
+}
 
+.idade{
+  color: #ff2e00;
+  display: flexbox;
+  width: 80px;
+  height: 20px;
+  border-color: #3bceac;
 }
 
 .matricula{
