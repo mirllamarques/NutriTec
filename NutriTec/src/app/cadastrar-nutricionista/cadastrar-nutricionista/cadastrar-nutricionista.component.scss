@@ -16,16 +16,6 @@ h1{
   justify-content: space-between;
 }
 
-#formulario-b{
-  display: flex;
-  margin-top: 2%;
-  margin-left: 20%;
-  margin-right: 5%;
-
-  align-items: center;
-  justify-content: space-between;
-
-}
 
 #value{
   border-color: #3bceac;
@@ -47,19 +37,9 @@ h1{
 .name{
   color: #ff2e00;
   display: flexbox;
-  width: 500px;
+  width: 300px;
   height: 20px;
-}
-
-.date{
-  border: 1px solid #3bceac;
-  border-radius: 3px;
-  height: 28px;
-  outline-color: #3bceac;
-  color:#ff2e00;
-  font-family: 'philosopher', sans-serif;
-  font-size: 14px;
-  width: 200px;
+  border-color: #3bceac;
 }
 
 .especialidade{
@@ -68,7 +48,6 @@ h1{
   border-color: #3bceac;
   color: #ff2e00;
   display: flexbox;
-  margin-right: 20%;
 
 }
 
@@ -93,29 +72,13 @@ label{
   align-items: center;
   justify-content: center;
   padding-top: 40px;
-}
 
-
-input[type=checkbox]{
-  display: none;
 }
 
 .nome-plano{
   padding-right: 80px;
   font-size: 25px;
   color: #008bf8;
-}
-.pvida input + label:before{
-  content: '';
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid red;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 3px;
-  margin-right: 8px;
 }
 
 select:focus{
@@ -124,47 +87,6 @@ select:focus{
 
 textarea:focus{
   outline-color: #0ead69;
-}
-
-.pvida input:checked + label::before{
-  border: 1px solid lime;
-  background-color: limegreen;
-}
-
-.hsaude input + label:before{
-  content: '';
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid red;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 3px;
-  margin-right: 8px;
-}
-
-.hsaude input:checked + label::before{
-  border: 1px solid lime;
-  background-color: limegreen;
-}
-
-.umais input + label:before{
-  content: '';
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid red;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 3px;
-  margin-right: 8px;
-}
-
-.umais input:checked + label::before{
-  border: 1px solid lime;
-  background-color: limegreen;
 }
 
 
@@ -208,5 +130,11 @@ textarea{
 
 input:focus{
   outline-color: #0ead69;
+
+}
+
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
 
 }

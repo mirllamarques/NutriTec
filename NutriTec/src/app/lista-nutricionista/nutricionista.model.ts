@@ -1,5 +1,5 @@
 export interface Nutricionista{
-  healthPlan: string;
+  healthPlan: [];
   name: string;
   speciality: string;
   registration: string;
