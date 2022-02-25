@@ -1,3 +1,4 @@
+import { DashboardsService } from './../dashboards.service';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Chart } from 'chart.js';
 
@@ -11,14 +12,24 @@ export class DashboardsComponent implements OnInit {
   @ViewChild("meuCanvas1", { static: true }) elemento1: ElementRef;
   @ViewChild("meuCanvas2", { static: true }) elemento2: ElementRef;
 
+  nutricionistas: number[] = []
+  constructor(private service: DashboardsService){}
+
+  getAllNutricionistas(){
+    this.service.getAll().subscribe(resposta => {
+      this.nutricionistas = resposta
+    })
+  }
+
   ngOnInit(){
+    this.getAllNutricionistas()
     new Chart(this.elemento1.nativeElement, {
       type: 'doughnut',
       data: {
         labels: ["Plano Vida","Hap Saúde","Ut Mais"],
         datasets: [
           {
-            data: [85,72,86],
+            data: this.nutricionistas,
             backgroundColor: ["#31a389","#0ead69", "#3bceac"],
             fill: true
           },

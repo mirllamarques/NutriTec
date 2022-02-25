@@ -12,7 +12,7 @@ export class ListaNutricionistaService {
   baseUrl: String = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
-
+  
   findAll(): Observable<Nutricionista[]>{
     const url = `${this.baseUrl}/nutritionists`
     return this.http.get<Nutricionista[]>(url)

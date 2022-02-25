@@ -1,3 +1,6 @@
+import { Router } from '@angular/router';
+import { CadastrarPacienteService } from './../cadastrar-paciente.service';
+import { Paciente } from './../../lista-paciente/lista-paciente.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +12,27 @@ import { Component, OnInit } from '@angular/core';
 
 export class CadastrarPacienteComponent{
 
-  constructor() { }
+  paciente: Paciente = {
 
+    cpf: '',
+    name: '',
+    age: undefined,
+    weight: undefined,
+    height: undefined,
+    healthPlan: ''
+
+  }
+
+  constructor(private service: CadastrarPacienteService, private router: Router) { }
+
+  ngOnInit(): void {
+  }
+
+  create(): void{
+    this.service.create(this.paciente).subscribe((resposta ) =>{
+      this.router.navigate(['cadastrado'])
+    }
+    )
+  }
 
 }

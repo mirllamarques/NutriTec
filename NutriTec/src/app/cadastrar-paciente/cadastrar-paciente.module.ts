@@ -5,6 +5,7 @@ import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { CadastrarPacienteRoutingModule } from './cadastrar-paciente-routing.module';
 import { CadastrarPacienteComponent } from './cadastrar-paciente/cadastrar-paciente.component';
@@ -21,7 +22,9 @@ import { CadastrarPacienteComponent } from './cadastrar-paciente/cadastrar-pacie
     MatInputModule,
     MatNativeDateModule,
     MatDatepickerModule,
-    MatSelectModule
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class CadastrarPacienteModule { }

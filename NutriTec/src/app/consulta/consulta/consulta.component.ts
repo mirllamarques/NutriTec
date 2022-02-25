@@ -1,3 +1,4 @@
+import { Nutricionista } from './../../lista-nutricionista/nutricionista.model';
 import { Consulta } from './../consulta.model';
 import { ConsultaService } from './../consulta.service';
 import { Component, OnInit } from '@angular/core';
@@ -33,7 +34,16 @@ export class ConsultaComponent implements OnInit{
     this.dialog.open(DialogElemento);
   }
 
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['plano', 'nutricionista', 'paciente', 'data'];
+  nutricionistas: Nutricionista[] = []
+
+  healthPlan: String = ''
+
+  findAll(): void{
+
+  }
+  
+  dataSource = this.nutricionistas;
   columnsToDisplay = ['Plano','Matricula', 'Nome', 'Especialidade'];
   expandedElement: PeriodicElement | null | undefined;
 
@@ -51,45 +61,5 @@ export interface PeriodicElement {
   Nome: string;
   Especialidade: string;
 }
-const ELEMENT_DATA: PeriodicElement[] = [
-  {
-    Plano: 'Plano Vida',
-    Matricula: '1234567',
-    Nome: 'Paulo',
-    Especialidade: 'Desporto',
 
-
-  },
-  {
-    Plano: 'Plano Vida',
-    Matricula: '1234561',
-    Nome: 'Joseph',
-    Especialidade: 'Nutrologo',
-
-  },
-  {
-    Plano: 'Plano Vida',
-    Matricula: '1234562',
-    Nome: 'Thiago',
-    Especialidade: 'Dietas com foco em ganho de massa',
-
-  },
-  {
-    Plano: 'Plano Vida',
-    Matricula: '1234563',
-    Nome: 'Marina',
-    Especialidade: 'Dietas para redução de gordura',
-  },
-  {
-    Plano: 'Plano Vida',
-    Matricula: '1234564',
-    Nome: 'Paloma',
-    Especialidade: 'Dietas para redução de açúcar',
-    },
-  {
-    Plano: 'Plano Vida',
-    Matricula: '1234565',
-    Nome: 'Aurora',
-    Especialidade: 'Geral',
-  }
-];
+;

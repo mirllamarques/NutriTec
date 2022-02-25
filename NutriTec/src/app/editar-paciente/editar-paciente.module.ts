@@ -4,7 +4,7 @@ import {MatInputModule} from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
-import { MatDatepickerModule } from '@angular/material/datepicker';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 import { EditarPacienteRoutingModule } from './editar-paciente-routing.module';
@@ -21,8 +21,9 @@ import { EditarPacienteComponent } from './editar-paciente/editar-paciente.compo
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    MatDatepickerModule,
-    MatSelectModule
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class EditarPacienteModule { }
